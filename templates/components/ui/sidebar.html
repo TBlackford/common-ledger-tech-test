@@ -1,0 +1,19 @@
+<aside class="menu column is-2">
+    <p class="menu-label">
+        Query
+    </p>
+    <ul class="menu-list">
+        <li><a {% if path == 'account' %} class="is-active"{% endif %} href="/views/account">Account</a></li>
+        <li><a {% if path == 'bill' %} class="is-active"{% endif %} href="/views/bill">Bill</a></li>
+        <li><a {% if path == 'companyinfo' %} class="is-active"{% endif %} href="/views/companyinfo">Company Info</a></li>
+        <li><a {% if path == 'customer' %} class="is-active"{% endif %} href="/views/customer">Customer</a></li>
+        <li><a {% if path == 'employee' %} class="is-active"{% endif %} href="/views/employee">Employee</a></li>
+        <li><a {% if path == 'estimate' %} class="is-active"{% endif %} href="/views/estimate">Estimate</a></li>
+        <li><a {% if path == 'invoice' %} class="is-active"{% endif %} href="/views/invoice">Invoice</a></li>
+        <li><a {% if path == 'item' %} class="is-active"{% endif %} href="/views/item">Item</a></li>
+        <li><a {% if path == 'payment' %} class="is-active"{% endif %} href="/views/payment">Payment</a></li>
+        <li><a {% if path == 'preferences' %} class="is-active"{% endif %} href="/views/preferences">Preferences</a></li>
+        <li><a {% if path == 'taxagency' %} class="is-active"{% endif %} href="/views/taxagency">Tax Agency</a></li>
+        <li><a {% if path == 'vendor' %} class="is-active"{% endif %} href="/views/vendor">Vendor</a></li>
+    </ul>
+</aside>

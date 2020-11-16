@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Intuit Integration{% endblock %}
+
+{% block content %}
+
+<div class="columns">
+
+{% include 'components/ui/sidebar.html' %}
+
+<div class="box column is-10">
+    <div>
+
+        {% include 'components/ui/tabs.html' %}
+
+        <br />
+
+        {% if view == 'one' %}
+
+        {% include 'components/query_one_form.html' %}
+
+        <hr />
+
+        {% elif view == 'all' %}
+
+        {% endif %}
+
+        {% if data %}
+        <pre><code class="json">
+{{ data }}
+        </code></pre>
+        {% endif %}
+
+    </div>
+</div>
+
+</div>
+
+{% endblock %}

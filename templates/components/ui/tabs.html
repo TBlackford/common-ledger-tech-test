@@ -1,0 +1,6 @@
+<div class="tabs is-centered">
+    <ul>
+        <li {% if view == 'one' %} class="is-active"{% endif %}><a href="/views/{{ path }}/one">Read One {{ path | title }}</a></li>
+        <li {% if view == 'all' %} class="is-active"{% endif %}><a href="/views/{{ path }}/all">Read All</a></li>
+    </ul>
+</div>

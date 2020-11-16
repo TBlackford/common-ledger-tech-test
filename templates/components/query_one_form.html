@@ -1,0 +1,11 @@
+<form method="POST" action="/views/{{ path }}">
+    <div class="field has-addons has-addons-centered">
+        {{ form.csrf_token }}
+        <div class="control">
+            {{ form.id(class_="input", placeholder="Enter an ID") }}
+        </div>
+        <div class="control">
+            <input type="submit" class="button is-info" name="Search" />
+        </div>
+    </div>
+</form>
